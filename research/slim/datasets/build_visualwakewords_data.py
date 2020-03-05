@@ -72,13 +72,10 @@ and from this folder, run the following commands:
       --foreground_class_of_interest='person'
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
 
 import os
 import tensorflow as tf
-from datasets import build_visualwakewords_data_lib
+import build_visualwakewords_data_lib
 
 flags = tf.app.flags
 tf.flags.DEFINE_string('train_image_dir', '', 'Training image directory.')

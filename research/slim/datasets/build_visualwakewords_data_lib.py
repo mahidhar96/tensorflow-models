@@ -20,9 +20,6 @@ r"""Generate Visual Wakewords Dataset.
     converted to TF records.
     See build_visualwakewords_data.py for the sample usage.
 """
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
 
 import hashlib
 import io
@@ -34,7 +31,7 @@ import PIL.Image
 
 import tensorflow as tf
 
-from datasets import dataset_utils
+import dataset_utils
 
 tf.logging.set_verbosity(tf.logging.INFO)
 
