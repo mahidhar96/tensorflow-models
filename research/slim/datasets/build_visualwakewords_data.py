@@ -129,7 +129,7 @@ def main(unused_argv):
   if not tf.gfile.IsDirectory(FLAGS.output_dir):
     tf.gfile.MakeDirs(FLAGS.output_dir)
   train_output_path = os.path.join(FLAGS.output_dir, 'train.record')
-  val_output_path = os.path.join(FLAGS.output_dir, 'val.record')
+  val_output_path = os.path.join(FLAGS.output_dir, 'validation.record')
   build_visualwakewords_data_lib.create_tf_record_for_visualwakewords_dataset(
       visualwakewords_annotations_train,
       FLAGS.train_image_dir,
